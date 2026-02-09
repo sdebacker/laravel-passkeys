@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.6.1 - 2026-02-09
+
+### What's Changed
+
+* Support web-auth/webauthn-lib 5.3 (CredentialRecord) by @freekmurze in https://github.com/spatie/laravel-passkeys/pull/100
+
+### New Contributors
+
+* @freekmurze made their first contribution in https://github.com/spatie/laravel-passkeys/pull/100
+
+**Full Changelog**: https://github.com/spatie/laravel-passkeys/compare/1.6.0...1.6.1
+
 ## 1.6.0 - 2026-02-09
 
 ### What's Changed
