@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.6.2 - 2026-02-25
+
+Add Polish translations
+
 ## 1.6.1 - 2026-02-09
 
 ### What's Changed
