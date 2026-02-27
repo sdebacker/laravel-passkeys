@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-passkeys` will be documented in this file.
 
+## 1.6.3 - 2026-02-27
+
+Support Laravel 13
+
 ## 1.6.2 - 2026-02-25
 
 Add Polish translations
