@@ -11,10 +11,10 @@ use Illuminate\Support\Facades\DB;
 use Spatie\LaravelPasskeys\Database\Factories\PasskeyFactory;
 use Spatie\LaravelPasskeys\Support\Config;
 use Spatie\LaravelPasskeys\Support\Serializer;
-use Webauthn\PublicKeyCredentialSource;
+use Webauthn\CredentialRecord;
 
 /**
- * @property PublicKeyCredentialSource $data
+ * @property CredentialRecord $data
  */
 class Passkey extends Model
 {
@@ -36,9 +36,9 @@ class Passkey extends Model
         return new Attribute(
             get: fn (string $value) => $serializer->fromJson(
                 $value,
-                PublicKeyCredentialSource::class,
+                CredentialRecord::class,
             ),
-            set: fn (PublicKeyCredentialSource $value) => [
+            set: fn (CredentialRecord $value) => [
                 'credential_id' => self::encodeCredentialId($value->publicKeyCredentialId),
                 'data' => $serializer->toJson($value),
             ],
